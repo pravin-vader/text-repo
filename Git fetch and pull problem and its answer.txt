@@ -1,0 +1,28 @@
+This error means that your Git repository doesn't have a remote named origin configured — so when you try git pull origin main, Git has no idea where to pull from.
+
+Step 1: Check if a remote is set
+
+git remote -v
+
+Step 2: Add the remote
+You’ll need to add the remote manually. If you have the repository URL
+
+git remote add origin <repository-URL>
+
+ Step 3: Fetch and set upstream
+git fetch origin
+git branch --set-upstream-to=origin/main
+
+Now you can pull as usual:
+git pull
+
+
+
+Finally Check if a remote is set
+git remote -v
+
+
+Thank you and happy learning
+
+
+
